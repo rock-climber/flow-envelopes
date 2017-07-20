@@ -1,0 +1,202 @@
+/*首页*/
+#inviteFriend .header_box{
+	width: 100%;
+	height: 7rem;
+	background: red;
+	overflow: hidden;
+}
+#inviteFriend .invite{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5rem;
+	padding: 0.1rem;
+	background: orange;
+	font-size: 0.25rem;
+	color: #ffffff;
+	text-align: center;
+	border-radius: 0.05rem;
+}
+#inviteFriend .footer_box{
+	margin: 0 auto;
+	width: 80%;
+	overflow: hidden;
+}
+.flowBtn{
+	width: 100%;
+	margin: 0.5rem auto;
+	overflow: hidden;
+}
+.flowBtn p{
+	width: 40%;
+	padding: 0.1rem 0;
+	text-align: center;
+	background: red;
+	color: #FFFFFF;
+	font-size: 0.2rem;
+	border-radius: 0.1rem;
+}
+.flowBtn a:first-child p{
+	float: left;
+}
+.flowBtn a:last-child p{
+	float: right;
+}
+.flow_illust{
+	overflow: hidden;
+	padding: 0.2rem 0.1rem;
+	border-radius: 0.15rem;
+	background: #FFFFFF;
+	border: 1px solid #dddddd;
+	font-size: 0.16rem;
+	color: #333333;
+	list-style: disc;
+	padding-left: 0.5rem;
+}
+
+/*兑换记录*/
+#flowHistory .head{
+	width: 100%;
+	height: 2.4rem;
+	background: red;
+	overflow: hidden;
+}
+#flowHistory .head .unactivated{
+	width: 1.8rem;
+	height: 1.8rem;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 100%;
+	margin: 0.3rem auto;
+}
+.unactivated p{
+	text-align: center;
+}
+.unactivated p:first-child{
+	color: #333333;
+	font-size: 0.12rem;
+	padding: 0.1rem 0;
+	margin-top: 0.3rem;
+}
+.unactivated p:last-child{
+	color: #333333;
+	font-weight: 600;
+	font-size: 0.4rem;
+}
+.excHistory{
+	width: 100%;	
+}
+.excHistory h3{
+	padding: 0.2rem 0 0.2rem 0.2rem;
+}
+
+.excFlow li{
+	overflow: hidden;
+	padding: 0.2rem 0.2rem;
+	background: #FFFFFF;
+	margin-bottom: 0.03rem;
+}
+.excFlow .excLeft{
+	float: left;
+}
+.excFlow .excLeft span:first-child{
+	font-size: 0.18rem;
+	margin-right: 0.1rem;
+	color: #666666;
+}
+.excFlow .excLeft span:last-child{
+	font-size: 0.3rem;
+	color: red;
+}
+.excFlow .excRight{
+	float: right;
+}
+.excFlow .excRight span{
+	font-size: 0.3rem;
+}
+.moreHis{
+	padding: 0.2rem 0;
+	text-align: center;
+	font-size: 0.16rem;
+}
+#flowHistory .footBar{
+	width: 100%;
+	padding: 0.05rem 0;
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+}
+#flowHistory .footBar p{
+	text-align: center;
+	font-size: 0.16rem;
+}
+/*兑换流量*/
+#exchangeFlow .head{
+	width: 100%;
+	height: 2.4rem;
+	background: red;
+	overflow: hidden;
+}
+#exchangeFlow .head .unactivated{
+	width: 1.8rem;
+	height: 1.8rem;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 100%;
+	margin: 0.3rem auto;
+}
+#exchangeFlow .unactivated p{
+	text-align: center;
+}
+#exchangeFlow .unactivated p:first-child{
+	color: #333333;
+	font-size: 0.12rem;
+	padding: 0.1rem 0;
+	margin-top: 0.3rem;
+}
+#exchangeFlow .unactivated p:last-child{
+	color: #333333;
+	font-weight: 600;
+	font-size: 0.4rem;
+}
+
+#exchangeFlow .footBar{
+	width: 100%;
+	padding: 0.05rem 0;
+	background: #FFFFFF;
+	position: fixed;
+	bottom: 0;
+}
+#exchangeFlow .footBar p{
+	text-align: center;
+	font-size: 0.16rem;
+}
+.excPhone{
+	padding: 0.25rem 0.2rem;
+}
+.excPhone span{
+	font-size: 0.25rem;
+	color: #000000;
+	font-weight: 600;
+}
+.excPhone #phone{
+	padding: 0.15rem 0.15rem;
+	outline: none;
+	border-radius: 0.1rem;
+	border: 1px solid #DDDDDD;
+	width: 4.5rem;
+}
+.selectFlow li{
+	width: 3.7rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	float: left;
+	background: #FFFFFF;
+	margin-bottom: 0.1rem;
+	font-size: 0.35rem;
+	font-weight: 600;
+	color: red;
+}
+.selectFlow li:nth-child(1),.selectFlow li:nth-child(3){
+	margin-right: 0.1rem;
+}
