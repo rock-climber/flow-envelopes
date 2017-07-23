@@ -8,27 +8,53 @@
     	<link rel="stylesheet" type="text/css" href="../css/inviteFriend.css"/>
 		<title></title>
 	</head>
-	<body>		
+	<body id="exchange">		
 		<div id="exchangeFlow">
 			<header>
 				<div class="head">
 					<div class="unactivated">
-						<p>未兑换流量</p>
-						<p>20MB</p>
+						<img src="../img/gift.png"/>
+						<p>
+							你有
+							<span class="remainder">20M</span>
+							流量未领取
+						</p>
 					</div>
 				</div>
 			</header>
 			<content>
-				<div class="excPhone">
-					<span>兑换手机号：</span>
-					<input type="text"  id="phone" value="" placeholder="例如：12345678900"/>
+				<div class="excHistory">
+					<h3>兑换流量</h3>
 				</div>
-				<ul class="selectFlow">
-					<li>50MB</li>
-					<li>100MB</li>
-					<li>150MB</li>
-					<li>200MB</li>
-				</ul>
+				<div class="content">
+					<div class="excPhone">
+						<span>兑换手机号：</span>
+						<input type="text" maxlength="11" id="phone" value="" placeholder="请输入手机号"/>
+					</div>
+					<ul class="selectFlow">
+						<li>
+							<img src="../img/fivety.png"/>
+							<input hidden="hidden" value="50"/>
+						</li>
+						<li>
+							<img src="../img/hundred.png"/>
+							<input hidden="hidden" value="100"/>
+						</li>
+						<li>
+							<img src="../img/oneFive.png"/>
+							<input hidden="hidden" value="150"/>
+						</li>
+						<li>
+							<img src="../img/twoHundred.png"/>
+							<input hidden="hidden" value="200"/>
+						</li>
+					</ul>
+					<div class="sureBox">
+						<p id="sure">确定兑换</p>
+					</div>
+					
+				</div>
+				
 			</content>
 			<footer>
 				<div class="footBar">
@@ -38,6 +64,6 @@
 			</footer>
 		</div>
 	</body>
-	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="../js/jquery-2.1.0.js"></script>
 	<script src="../js/flow.js"></script>
 </html>

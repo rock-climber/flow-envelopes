@@ -6,7 +6,7 @@ fieldset, img { border:none; }
 
 address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
 
-ul, ol { list-style:none; } 
+ul{ list-style:none; } 
 
 body { color:#333;font:12px/20px "微软雅黑","SimSun","宋体","Arial Narrow",HELVETICA; background:#f9f9f9; overflow-x:hidden;}
 

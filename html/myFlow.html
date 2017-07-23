@@ -8,13 +8,17 @@
     	<link rel="stylesheet" type="text/css" href="../css/inviteFriend.css"/>
 		<title></title>
 	</head>
-	<body>		
+	<body  id="history">		
 		<div id="flowHistory">
 			<header>
 				<div class="head">
 					<div class="unactivated ">
-						<p>未兑换流量</p>
-						<p>20MB</p>
+						<img src="../img/gift.png"/>
+						<p>
+							你有
+							<span class="remainder">20M</span>
+							流量未领取
+						</p>
 					</div>
 				</div>
 			</header>
@@ -22,46 +26,47 @@
 				<div class="excHistory">
 					<h3>兑换记录</h3>
 					<ul class="excFlow">
-						<li>
+						<!--从后台获取的数据-->
+						<!--<li>
 							<div class="excLeft">
 								<span>兑换流量</span>
-								<span>50MB</span>
+								<span class="completeFlow">50MB</span>
 							</div>
 							<div class="excRight">
-								<span>07/21</span>
-								<span>12:52</span>								
+								<span class="date">07/21</span>
+								<span class="time">12:52</span>								
 							</div>
 						</li>
 						<li>
 							<div class="excLeft">
 								<span>兑换流量</span>
-								<span>50MB</span>
+								<span class="completeFlow">100MB</span>
 							</div>
 							<div class="excRight">
-								<span>07/21</span>
-								<span>12:52</span>								
+								<span class="date">07/21</span>
+								<span class="time">12:52</span>								
 							</div>
 						</li>
 						<li>
 							<div class="excLeft">
 								<span>兑换流量</span>
-								<span>50MB</span>
+								<span class="completeFlow">150MB</span>
 							</div>
 							<div class="excRight">
-								<span>07/21</span>
-								<span>12:52</span>								
+								<span class="date">07/21</span>
+								<span class="time">12:52</span>								
 							</div>
 						</li>
-						<li>
-							<div class="excLeft">
+						<li>-->
+							<!--<div class="excLeft">
 								<span>兑换流量</span>
-								<span>50MB</span>
+								<span class="completeFlow">200MB</span>
 							</div>
 							<div class="excRight">
-								<span>07/21</span>
-								<span>12:52</span>								
+								<span class="date">07/21</span>
+								<span class="time">12:52</span>								
 							</div>
-						</li>
+						</li>-->
 					</ul>
 					<p class="moreHis">更多记录</p>
 				</div>
@@ -74,5 +79,6 @@
 			</footer>
 		</div>
 	</body>
-	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<script src="../js/flow.js"></script>
 </html>

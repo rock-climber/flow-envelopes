@@ -3,17 +3,21 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!--<script src="../js/wxLogin.js"></script>-->
     	<script src="../js/buju.js"></script>
     	<link rel="stylesheet" href="../css/common.css" />
     	<link rel="stylesheet" type="text/css" href="../css/inviteFriend.css"/>
+    	<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 		<title></title>
 	</head>
-	<body>
+	<body id="index">
 		<div id="inviteFriend">
 			<div class="header_box">
-				<p class="invite">邀请好友送流量</p>
-			</div>
-			<div class="footer_box">
+				<ul class="head_dec">
+					<li>每成功邀请一个好友会增加<span>10MB</span>流量</p>
+					<li>积累到<span>50MB</span>可兑换，最高<span>200MB</span></p>
+				</ul>
+				<p class="invite">邀请好友</p>
 				<div class="flowBtn">
 					<a href="../html/myFlow.html">
 						<p>我的流量</p>
@@ -22,12 +26,22 @@
 						<p>兑换流量</p>
 					</a>
 				</div>
-				<ul class="flow_illust">
-					<li>每成功邀请一个好友都会增加10MB流量，积累到50MB可兑换，最高200MB</li>
-					<li>每人每天只有一次兑换流量机会</li>
-				</ul>
+			</div>
+			<div class="footer_box">
+				<h3>活动规则</h3>
+				<ol class="flow_illust" start="1" type="1">
+					<li>每个用户每天最多邀请8个好友；</li>
+					<li>每个用户关注微信后均可领取20M流量（限首次）;</li>
+					<li>每个用户每天限兑换1次流量，兑换流量的规格以运营商流量产品规格为准；</li>					
+					<li>每个微信账号只能绑定一个手机号码，绑定后不可修改；</li>				
+					<li>可能由于运营商系统繁忙，部分兑换的流量将在3-5个工作日内到账；</li>
+					<li>在参加活动过程中，如果出现嘴鼻行为（如批量注册、恶意领取红包、虚假分享等）；四通将自动取消您的红包领取和使用资格；</li>
+					<li>流量兑换介质至2017年12月31日</li>
+					<li>活动最终解释权归威尔科技（北京）有限公司所有。</li>
+				</ol>
 			</div>
 		</div>
 	</body>
-	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="../js/jquery-2.1.0.js"></script>
+	<script src="../js/flow.js"></script>
 </html>
