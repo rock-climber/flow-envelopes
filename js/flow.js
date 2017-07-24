@@ -1,20 +1,37 @@
 
 $(function(){
-		
+	
+	function GetQueryString(name){	
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r!=null)return unescape(r[2]); return null;
+	}
+	
+	var myId=GetQueryString("id");
+	if(myId !=null && myId.toString().length>1)
+	{
+		var openId = GetQueryString("id");
+		transferId(openId)
+	}
 	/*
-	 *关注微信公众号
+	 *第一次传送openid到后台
 	 * */
-	$.ajax({
-		type:'post',
-		url:'http://server/api/focusWechat.do',
-		success:function(data){
-//			openId = data.openId
-//			Sign = data.Sign
-		},
-		error:function(msg){
-			
+	function transferId(openId){
+		var data = {
+			"openId":openId
 		}
-	})
+		$.ajax({
+			type:'post',
+			url:'http://server/api/focusWechat.do',
+			data:data,		
+			success:function(data){
+				openId = data.openId
+			},
+			error:function(msg){
+				
+			}
+		})
+	}
 	
 	/*
 	 *邀请好友
@@ -56,9 +73,8 @@ $(function(){
 	function transferBackstage(){
 		var url='http://server/api/inviteFriends.do'
 		var data = {
-//			"openId":openId,
+			"openId":openId,
 			"num":num
-//			"Sign":sign
 		};
 		$.post(url,data,function(request){
 			
@@ -73,8 +89,7 @@ $(function(){
 		type:'post',
 		url:'http://server/api/exchangeRecord.do',
 		data:{
-//			"openId":openId,
-//			"Sign":Sign
+			"openId":openId,
 		},
 		success:function(data){
 			var allData = data.result;
@@ -179,8 +194,7 @@ $(function(){
 			var data = {
 				"phone":phone,
 				"size":size,
-//				"openId":openId,
-//				"Sign":Sign
+				"openId":openId,
 			};
 			
 			/*
@@ -208,8 +222,7 @@ $(function(){
 		type:'post',
 		url:'http://server/api/canExchangeFlow.do',				
 		data:{
-//			"openId":openId,
-//			"Sign":Sign
+			"openId":openId
 		},
 		success:function(data){
 			console.log(data)
